@@ -649,3 +649,147 @@ nav .btn-contact:hover {
         padding: 3rem 1rem;
     }
 }
+
+/* --------------------*/
+/*----About us---------*/
+/*---------------------*/
+
+/* =========================================
+SECTION: HEADER (Your Gateway to Global Education)
+This is the main purple block.
+========================================= */
+
+.section-header-impact {
+    /* Main Purple Background */
+    background-color: #581c87; /* Assuming this is the primary color from previous files */
+    padding: 4rem 1rem;
+    text-align: center;
+    color: white; /* Text color for content inside this block */
+}
+
+.section-header-impact .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-header-impact h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.section-header-impact h1 span {
+    /* Highlight color for "Global Education" */
+    color: #ffd700; 
+}
+
+.section-header-impact p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 700px;
+    margin: 0.5rem auto 0; /* Center the description text */
+}
+
+/* =========================================
+SECTION: STATISTICS GRID (700+, 50+, 7+, 95%)
+This is the area directly below the purple block.
+========================================= */
+
+.stats-grid-container {
+    padding: 2rem 1rem 6rem; /* Padding below the grid */
+    margin-top: 3rem; /* Visually pull the grid up to overlap the header */
+    position: relative;
+    z-index: 10;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.stat-item {
+    background: white;
+    padding: 2rem 1rem;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Soft shadow */
+    transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(88, 28, 135, 0.1);
+}
+
+.stat-icon-wrapper {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    font-size: 2rem; /* Size of the icon graphic */
+}
+
+/* Individual Icon Styles (Based on colors in the image) */
+/* 1st Icon: Students Placed (Teal/Light Blue) */
+.stat-item:nth-child(1) .stat-icon-wrapper { background-color: #e0f6f4; color: #38bdf8; } 
+/* 2nd Icon: Partner Universities (Light Green/Teal) */
+.stat-item:nth-child(2) .stat-icon-wrapper { background-color: #ecfdf5; color: #10b981; } 
+/* 3rd Icon: Countries Covered (Light Purple/Green) */
+.stat-item:nth-child(3) .stat-icon-wrapper { background-color: #eef2ff; color: #6d28d9; }
+/* 4th Icon: Visa Success Rate (Light Pink/Blue) */
+.stat-item:nth-child(4) .stat-icon-wrapper { background-color: #fce7f3; color: #6366f1; } 
+
+
+.stat-item h3 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #111827; /* Dark text for the number */
+    margin-bottom: 0.5rem;
+    line-height: 1;
+}
+
+.stat-item p {
+    font-size: 0.9rem;
+    color: #4b5563; /* Gray text for the description */
+    font-weight: 500;
+}
+
+
+
+
+
+
+/* --- Responsive Adjustments for this section --- */
+
+@media (max-width: 1024px) {
+    .impact-header h1 {
+        font-size: 3rem;
+    }
+    .stats-grid {
+        /* Two cards per row on tablets */
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .impact-header h1 {
+        font-size: 2rem;
+    }
+    .stats-grid {
+        /* One card per row on mobile */
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+    .impact-section {
+        padding: 3rem 0;
+    }
+}

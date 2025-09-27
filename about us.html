@@ -3,41 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Overseas Project</title>
-  <link rel="stylesheet" href="index.css">
+  <title>About Us</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Navbar -->
+ <!-- ==================================== -->
+  <!-- 1. NAVBAR (Copied from home.html) -->
+  <!-- ==================================== -->
   <nav>
-  <div class="logo">SegelBoot</div>
-  <ul>
-    <li><a href="home.html" class="active">Home</a></li>
-    <li><a href="services.html">Services</a></li>
-    <li><a href="about us.html">About Us</a></li>
-  </ul>
-  <a href="#" class="btn-contact">Contact</a>
-</nav>
+    <div class="logo">SegelBoot</div>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="services.html" >Services</a></li>
+      <li><a href="about us.html" class="active">About Us</a></li>
+    </ul>
+    <a href="#" class="btn-contact">Contact</a>
+  </nav>
+
+<!-- =========================================
+IMPACT SECTION (Purple Header and White Stats Grid)
+Place this section in your home.html file, for example, 
+after the Countries section and before the Testimonials section.
+========================================= -->
+
+<section class="section-header-impact">
+    <div class="container">
+        <!-- Header Text -->
+        <h1>Your Gateway to <span>Global Education</span> Success</h1>
+        <p>
+            We are proud of the tangible results we deliver. Our commitment to excellence 
+            and personalized guidance ensures every student achieves their academic dreams.
+        </p>
+    </div>
+</section>
 
 
-  <!-- About Section -->
-  <section>
-    <h2>About Us</h2>
-    <p>
-      Overseas Project is a team of dedicated professionals committed to delivering high-quality solutions.
-      We aim to make technology accessible and beneficial for businesses and individuals alike.
-    </p>
-    <p>
-      Our mission is to provide innovative services that empower growth and simplify complex challenges.
-      With a focus on reliability and customer satisfaction, we strive to be your trusted partner in success.
-    </p>
-  </section>
+<!-- Stats Grid is pulled up using negative margin in CSS -->
+<div class="stats-grid-container">
+    <div class="stats-grid">
+        
+        <!-- Stat Item 1: Students Placed -->
+        <div class="stat-item">
+            <div class="stat-icon-wrapper">
+                <span class="icon">👥</span>
+            </div>
+            <h3>700+</h3>
+            <p>Students Placed</p>
+        </div>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Overseas Project. All rights reserved.</p>
-  </footer>
+        <!-- Stat Item 2: Partner Universities -->
+        <div class="stat-item">
+            <div class="stat-icon-wrapper">
+                <span class="icon">🏢</span>
+            </div>
+            <h3>50+</h3>
+            <p>Partner Universities</p>
+        </div>
+        
+        <!-- Stat Item 3: Countries Covered -->
+        <div class="stat-item">
+            <div class="stat-icon-wrapper">
+                <span class="icon">🌎</span>
+            </div>
+            <h3>7+</h3>
+            <p>Countries Covered</p>
+        </div>
+        
+        <!-- Stat Item 4: Visa Success Rate -->
+        <div class="stat-item">
+            <div class="stat-icon-wrapper">
+                <span class="icon">🏆</span>
+            </div>
+            <h3>95%</h3>
+            <p>Visa Success Rate</p>
+        </div>
 
+    </div>
+</div>
+
+
+
+
+ <!-- ==================================== -->
+<!--  DETAILED FOOTER (Replacing the simple one) -->
+<!-- ==================================== -->
+<footer class="detailed-footer">
+    <div class="footer-content">
+        <!-- Column 1: Logo & Mission -->
+        <div class="footer-column">
+            <div class="footer-logo">SegelBoot</div>
+            <p>Empowering students to pursue global education with expert guidance and support.</p>
+        </div>
+
+        <!-- Column 2: Our Services -->
+        <div class="footer-column">
+            <h4>Our Services</h4>
+            <ul>
+                <li><a href="#">Profile Evaluation</a></li>
+                <li><a href="#">University Selection</a></li>
+                <li><a href="#">Visa Documentation</a></li>
+                <li><a href="#">Loan & Scholarships</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Top Destinations -->
+        <div class="footer-column">
+            <h4>Top Destinations</h4>
+            <ul>
+                <li><a href="#">USA</a></li>
+                <li><a href="#">UK</a></li>
+                <li><a href="#">Canada</a></li>
+                <li><a href="#">Australia</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 4: Contact -->
+        <div class="footer-column">
+            <h4>Contact</h4>
+            <p>Email: SegelBoot@gmail.com</p>
+            <p>Phone: +91 94221 29534</p>
+            <p>Working Hours: 10 AM - 6 PM (Mon-Sat)</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

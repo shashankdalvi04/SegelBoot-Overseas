@@ -1,2 +1,0 @@
-# SegelBoot-Overseas
-Education Consultancy
